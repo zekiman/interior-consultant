@@ -30,6 +30,10 @@
       margin: auto;
       max-width: 1286px;
   }
+
+  .hamburger-menu-m{
+    display: none !important;
+  }
   
     /***** FLEX *****/
 
@@ -286,10 +290,14 @@
   
   body {
       background-color: #181719;
-      margin-right: 12px;
-      margin-left: 12px;
+
   }
-  
+
+  #container{
+    max-width: 351px;
+    margin: auto;
+  }
+
   a, p  {
       text-decoration: none;
       color: #fff;
@@ -298,6 +306,7 @@
   img {
       max-width: 100%;
   }
+
 
   /***** FLEX *****/
 
@@ -350,6 +359,150 @@
   .menu-icon-m span {
     font-size: 28px;
   }
+  /********************! HEADER - ENDS *********************/
+
+
+  /********************! BODY *********************/
+
+  #body {
+    margin-top: 38px;
+  }
+
+  .main-title-text{
+    font-family: var(--LoraFont);
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 46px;
+    text-transform: capitalize;
+    color: #fff;
+    margin-bottom: 25px;
+  }
+
+  .main-text-div{
+    max-width: 300px;  
+  }
+
+  .main-text{
+    font-family: var(--MontserratFont);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 25px;
+  }
+
+  .read-more-div{
+    margin-bottom: 37px;
+  }
+
+  .read-more-a{
+    font-family: var(--MontserratFont);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .read-more-text{
+    display: flex;
+    align-items: center;
+  }
+
+  .read-more-text .material-icons{
+    padding-left: 15px;
+  }
+
+
+  .main-right-div{
+    position: relative;
+  }
+
+
+
+/***** USER REVIEW SECTION *****/
+
+.card{
+  width: 300px;
+  height: 138px;
+  background-color: #181719;
+  position: absolute;
+  bottom: -94.5px;
+  right: 32px;
+  z-index: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.user-all-div{
+  margin-bottom: 8px;
+}
+
+.user-profile-div{
+  height: 52.68px;
+  width: 279.5px;
+  margin: auto;
+  margin-top: 7.32px;
+  display: flex;
+  align-items: center;
+}
+
+.user-photo-border-div{
+  width: 36.6px;
+  height: 36.6px;
+  margin-left: 12.44px;
+  margin-right: 12.44px;
+}
+
+.user-photo{
+  border-radius: 50%;
+}
+
+.user-name-text{
+  font-family: var(--MontserratFont);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 5.85px;
+}
+
+.user-job-text{
+  font-family: var(--MontserratFont);
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #828282;
+}
+
+.comment-div{
+  width: 210px;
+  margin-left: 19px;
+}
+
+.comment-text{
+  font-family: var(--LoraFont);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+  /***** MAIN RIGHT SECTION - ENDS *****/
+
+
+  .footer{
+    margin-top: 147.68px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: var(--MontserratFont);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer a{
+    color: #a9a9a9;
+  }
+
+  /* #container{
+    display: none;
+  } */
 
 
 

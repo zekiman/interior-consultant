@@ -1,11 +1,12 @@
-@media only screen and (min-width: 376px) {
-  :root{
+
+:root{
     --CrimsonFont: 'Crimson Pro', serif;
     --LoraFont: 'Lora', serif;
     --MontserratFont: 'Montserrat', sans-serif;
     --bg-color: #181719;
+}
 
-  }
+@media only screen and (min-width: 376px) {
 
   * {
       padding: 0;
@@ -51,6 +52,10 @@
 
   /********************! HEADER *********************/
   
+  .menu-icon-m{
+    display: none;
+  }
+
   .header {
       margin-top: 50px;
   }
@@ -170,9 +175,8 @@
 .read-more-text .material-icons{
   padding-left: 14px;
 }
-
-
   /***** MAIN LEFT SECTION - ENDS *****/
+
 
 
   /***** MAIN RIGHT SECTION *****/
@@ -189,19 +193,163 @@
     position: absolute;
   }
 
-  .user-all-div{
-    background-color: #181719;
+
+  /***** USER REVIEW SECTION *****/
+
+  .card{
     width: 410px;
     height: 189px;
+    background-color: #181719;
     position: absolute;
     bottom: -94.5px;
     right: 32px;
     z-index: 1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .user-all-div{
+    margin-bottom: 11px;
+  }
+
+  .user-profile-div{
+    height: 72px;
+    width: 382px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .user-photo-border-div{
+    width: 50px;
+    height: 50px;
+    margin-left: 17.5px;
+    margin-right: 17.5px;
+  }
+
+  .user-photo{
+    border-radius: 50%;
+  }
+  
+  .user-name-text{
+    font-family: var(--MontserratFont);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 8px;
+  }
+
+  .user-job-text{
+    font-family: var(--MontserratFont);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+  }
+
+  .comment-div{
+    width: 287px;
+    margin-left: 26px;
+  }
+
+  .comment-text{
+    font-family: var(--LoraFont);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  /***** MAIN RIGHT SECTION - ENDS *****/
+
+
+  .footer{
+    margin-top: 239px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-family: var(--MontserratFont);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .footer a{
+    color: #a9a9a9;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+
+  * {
+      padding: 0;
+      margin: 0;
+  }
+  
+  body {
+      background-color: #181719;
+      margin-right: 12px;
+      margin-left: 12px;
+  }
+  
+  a, p  {
+      text-decoration: none;
+      color: #fff;
+  }
+  
+  img {
+      max-width: 100%;
+  }
+
+  /***** FLEX *****/
+
+  .flex-header-m{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  /***** FLEX - ENDS *****/
+
+  /********************! HEADER *********************/
+
+  .header {
+    margin-top: 20px;
     
   }
 
+  .logo-div{
+    border: 1px solid #fff;
+    width: 103px;
+    height: 31px;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+  }
 
+  .logo-text{
+    font-family: var(--CrimsonFont);
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;   
+  }
 
+  .menu-div {
+    display: none;
+  }
+
+  .menu-icon-m {
+    color: #fff;
+    width: 28.5px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-icon-m span {
+    font-size: 28px;
+  }
 
 
 
